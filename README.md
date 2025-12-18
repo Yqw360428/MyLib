@@ -45,7 +45,7 @@ pickMediaRequest有三个参数，第一个是默认的PickMediaContract.imageOn
 pickLaunch.launch(RegisterUtil.pickMediaRequest())
 ```
 ```
-pickLaunch.launch(RegisterUtil.pickMediaRequest(PickMediaContract.imageOnly))
+pickLaunch.launch(RegisterUtil.pickMediaRequest(PickMediaContract.imageOnly,5))
 ```
 ```
   pickLaunch.launch(RegisterUtil.pickMediaRequest(PickMediaContract.imageOnly,object : ResultCallback{
