@@ -23,7 +23,7 @@ dependencyResolutionManagement {
 
 ```gradle
 dependencies {
-    implementation 'com.github.Yqw360428:MyLib:v1.0'
+    implementation 'com.github.Yqw360428:MyLib:v2.0'
 }
 ```
 
