@@ -23,4 +23,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "LibTest"
 include(":app")
-include(":mylibrary")
+include(":yqwlibrary")
