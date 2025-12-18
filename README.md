@@ -59,6 +59,34 @@ pickLaunch.launch(RegisterUtil.pickMediaRequest(PickMediaContract.imageOnly,5))
                 }
             }))
 ```
+各协定对应的回调接口：
+1. 选择照片或者视频
+```
+override fun onUriResult(uriList : List<Uri>){}
+override fun onPathResult(pathList : List<String>){}
+```
+2. 请求权限
+```
+override fun onPermissionAgree(permissions : List<String>){}
+override fun onPermissionDeny(permissions : List<String>){}
+override fun onPermissionResult(result : Boolean){}
+```
+3. 带参回传
+```
+override fun onActivityResult(result : ActivityResult){}
+```
+4. 拍照,录制视频
+```
+override fun onUriListener(uri : Uri?){}
+``` 
+5. 选择联系人
+``` 
+override fun onPickContact(name : String,numberList : List<String>){}
+``` 
+6. 获取文件
+```
+override fun onUriResult(uriList : List<Uri>){}
+```
 ### 其他的用法demo当中都有
 其中实现了大部分的注册协定，但有一部分我用的也很少就没有封装了。
 ### 混淆
