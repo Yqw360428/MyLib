@@ -16,13 +16,13 @@ import com.libyqwcon.yqwlibrary.util.RegisterUtil.TAG
 import com.libyqwcon.yqwlibrary.callback.ResultCallback
 
 class MainActivity : AppCompatActivity() {
-    private val pickLaunch = RegisterUtil.registerPickMedia(this)
-    private val permissionLaunch = RegisterUtil.registerPermissions(this)
-    private val forResultLaunch = RegisterUtil.registerForResult(this)
-    private val takePictureLaunch = RegisterUtil.registerTakePicture(this)
-    private val captureLaunch = RegisterUtil.registerCaptureVideo(this)
-    private val pickContactLaunch = RegisterUtil.registerPickContact(this)
-    private val getContentsLaunch = RegisterUtil.registerOpenMultipleDocuments(this)
+    private val pickLaunch = RegisterUtil.registerPickMedia(this)//照片或图片选择协定
+    private val permissionLaunch = RegisterUtil.registerPermissions(this)//权限协定
+    private val forResultLaunch = RegisterUtil.registerForResult(this)//带参回传协定
+    private val takePictureLaunch = RegisterUtil.registerTakePicture(this)//拍照协定
+    private val captureLaunch = RegisterUtil.registerCaptureVideo(this)//录制视频协定
+    private val pickContactLaunch = RegisterUtil.registerPickContact(this)//选择联系人协定
+    private val getContentsLaunch = RegisterUtil.registerOpenMultipleDocuments(this)//获取内容协定
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
