@@ -15,6 +15,7 @@ Add the dependency in your `build.gradle`:
 			maven { url 'https://jitpack.io' }
 		}
 	}
+---
 	dependencies {
 	        implementation 'com.github.Yqw360428:MyLib:v1.0'
 	}
